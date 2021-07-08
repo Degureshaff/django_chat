@@ -1,0 +1,49 @@
+
+{% extends 'main-layout.html' %}
+
+{% block title %}
+    Страница чата
+{% endblock %}
+
+{% block content %}
+    <link rel='stylesheet' href='/static/css/style.css'>
+    <h1 class="text-center">{% include 'header.html' %}</h1>
+    <div class="chat-input-container col-md-12">
+        <div class="input-group">
+          <input
+              type="text"
+              style = 'background-color: yellowgreen;'
+              class="form-control"
+              id = 'chat-message-input'
+              placeholder="Сообщение">
+          <button
+              class="btn btn-primary"
+              type="button"
+              id="chat-message-send-button"
+          >
+            ОТПРАВИТЬ
+          </button>
+        </div>
+    </div>
+    <div class="container-fluid chat-container">
+        <div class="row">
+            <div class="col-md-12 pt-3 chat-message-container">
+                <h2 class="text-md-start chat-message-parent ">
+                    <div class='chat-author'>
+                    Emir
+                    </div>
+                    <span class="chat-message">
+                        Привет
+                        <i class="badge chat-message-time">12:30</i>
+                    </span>
+                </h2>
+                <h2 class="text-md-end">
+                    <span class="chat-message chat-message-parent">
+                        Очень хорошо Как сам ?
+                        <i class="badge chat-message-time">12:30</i>
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}

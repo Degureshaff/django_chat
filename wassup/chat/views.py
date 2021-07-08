@@ -1,0 +1,11 @@
+from django.shortcuts import render
+
+
+
+def chat_view(request):
+    return render(request, 'chat_page.html')
+
+
+
+def login_view(request):
+    return render(request, 'login.html')
