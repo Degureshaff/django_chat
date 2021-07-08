@@ -3,9 +3,9 @@ let chatServer = new WebSocket('ws://192.168.0.111:3030/')
 
 // обьект для отправки данных на сервер вебсокет
 let response = {
-    username: 'emir',
-    address: 'plays clavogonki',
-    color: 'red',
+    username: '',
+    address: '',
+    color: 'black',
 }
 // когда заходим на сайт отправляем первое сообщение серверу
 // когда соединение к серверу успешное
